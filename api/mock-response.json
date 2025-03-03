@@ -1,0 +1,75 @@
+{
+  "primitive_types": {
+    "undefined_value": null, 
+    "null_value": null,
+    "boolean_true": true,
+    "boolean_false": false,
+    "number_integer": 123,
+    "number_float": 123.45,
+    "number_negative": -100,
+    "number_zero": 0,
+    "number_nan": "NaN",
+    "number_infinity": "Infinity",
+    "string_empty": "",
+    "string_text": "Hello, World!",
+    "bigint": "9007199254740991n",
+    "symbol": "Symbol(test)"
+  },
+  "complex_types": {
+    "date_iso": "2025-03-03T12:34:56.789Z",
+    "date_timestamp": 1700000000000,
+    "uuid": "550e8400-e29b-41d4-a716-446655440000",
+    "array_empty": [],
+    "array_numbers": [1, 2, 3],
+    "array_strings": ["apple", "banana"],
+    "array_mixed": [1, "two", null, true],
+    "object_empty": {},
+    "object_nested": {
+      "key": "value",
+      "sub_object": {
+        "id": 1,
+        "name": "Nested"
+      }
+    },
+    "function": "function() { return 'mock function'; }",
+    "promise": "Promise.resolve('mock promise')",
+    "regexp": "/^test$/",
+    "map": {
+      "type": "Map",
+      "value": [
+        ["key1", "value1"],
+        ["key2", "value2"]
+      ]
+    },
+    "set": {
+      "type": "Set",
+      "value": [1, 2, 3]
+    },
+    "typed_array": {
+      "type": "Uint8Array",
+      "value": [1, 2, 3]
+    },
+    "error": {
+      "name": "Error",
+      "message": "Something went wrong"
+    }
+  },
+  "edge_cases": {
+    "empty_response": null,
+    "json_string": "{ \"name\": \"John\", \"age\": 30 }",
+    "boolean_string": "true",
+    "number_string": "123",
+    "malformed_json": "{ key: value }",
+    "deeply_nested_object": {
+      "a": {
+        "b": {
+          "c": {
+            "d": {
+              "e": "Too deep!"
+            }
+          }
+        }
+      }
+    }
+  }
+}
